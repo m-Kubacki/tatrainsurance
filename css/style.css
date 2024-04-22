@@ -71,7 +71,7 @@ html {
 .header {
 	position: relative;
 	height: 890px;
-	background-image: url("/img/hero-image3.jpg");
+	background-image: url("./img/hero-image3.jpg");
 	background-size: cover;
 	background-position: center;
 }
