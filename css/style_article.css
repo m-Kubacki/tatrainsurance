@@ -35,6 +35,11 @@ html {
 	color: black;
 	font-size: 30px;
 }
+
+.navbar a {
+	text-decoration: none;
+}
+
 .navbar ul {
 	display: flex;
 }
@@ -71,10 +76,27 @@ html {
 .header {
 	position: relative;
 	height: 500px;
-	background-image: url("/img/hero-image3\ \(1\).jpg");
+	background-image: url("../img/pexels-dariaobymaha-1683975.jpg");
 	background-size: cover;
 	background-position: center;
 }
+
+.header2 {
+	position: relative;
+	height: 500px;
+	background-image: url("../img/hero-image.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.header3 {
+	position: relative;
+	height: 700px;
+	background-image: url("../img/pexels-pixabay-39691.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
 .hero-bg {
 	position: absolute;
 	width: 100%;
@@ -131,10 +153,19 @@ html {
 .article-content p {
 	text-align: center;
 	font-size: 20px;
+	line-height: 2;
 }
 .article-content li {
 	text-align: center;
 	font-size: 20px;
+}
+
+.photo {
+	position: relative;
+	height: 400px;
+	background-image: url("../img/pexels-startup-stock-photos-212286.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 .list {

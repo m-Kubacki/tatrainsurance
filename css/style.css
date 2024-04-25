@@ -35,12 +35,17 @@ html {
 	color: black;
 	font-size: 30px;
 }
+.navbar a {
+	text-decoration: none;
+}
+
 .navbar ul {
 	display: flex;
 }
 .navbar ul li {
 	list-style: none;
 }
+
 .navbar ul li a {
 	text-decoration: none;
 	color: black;
@@ -131,18 +136,32 @@ html {
 }
 
 .cards-group {
-	display: flex;
+	/* display: flex;
 	text-align: center;
+	flex-wrap: wrap; */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
 }
 
 .card {
+	width: 325px;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+/* .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
-	width: 33%;
+	width: 325px;
 	border-radius: 20px;
 	padding-top: 10px;
 	margin: 10px;
-}
+} */
 
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
