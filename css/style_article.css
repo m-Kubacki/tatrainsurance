@@ -185,6 +185,10 @@ html {
 	height: 400px;
 }
 
+.article-content a {
+	text-decoration: none;
+}
+
 .about-author {
 	background-color: antiquewhite;
 	display: flex;
@@ -212,9 +216,14 @@ html {
 	justify-content: center;
 	padding: 30px;
 }
+
 .website-btn {
 	text-decoration: none;
 	margin: 20px;
+}
+
+.website-btn a:visited {
+	text-decoration: none;
 }
 
 /* footer */
