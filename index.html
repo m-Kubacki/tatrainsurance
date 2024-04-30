@@ -23,6 +23,7 @@
 				<li><a href="#offers">Oferty</a></li>
 				<li><a href="#articles">Artykuły</a></li>
 				<li><a href="#contact">Kontakt</a></li>
+				<li><a href="#faq">FAQ</a></li>
 			</ul>
 			<div class="navbar-btns">
 				<button class="register-btn">Zarejestruj sie</button>
@@ -34,8 +35,17 @@
 			<div class="hero-bg"></div>
 			<div class="hero-text">
 				<h1>Tatra Insurance Life</h1>
-				<p>Nie zostaw rodziny bez słoniny!</p>
-				<button class="get-started-btn">Zapisz sie juz teraz</button>
+				<h2>Nie zostaw rodziny bez słoniny!</h2>
+				<div class="newsletter-container">
+					<input
+						type="email"
+						name="email"
+						placeholder="Adres Email"
+						class="newsletter-input"
+						required
+					/>
+					<button class="get-started-btn">Zapisz się już teraz</button>
+				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -49,10 +59,9 @@
 					Jesteśmy nową firmą, ale nasze podejście do klienta jest pełne
 					zaangażowania i dedykacji. W Tatra Insurance rozumiemy, że każdy
 					klient jest wyjątkowy, dlatego oferujemy spersonalizowane podejście do
-					każdej polisy ubezpieczeniowej. Nasze ubezpieczenia obejmują szeroki
-					zakres ryzyk, zapewniając kompleksową ochronę na wypadek
-					niespodziewanych zdarzeń. Ubezpiecz się teraz i zapewń bezpieczeństwo
-					i spokój swojej rodzinie i pamiętaj- nie zostaw rodziny bez słoniny.
+					każdego naszego klienta. Nasze ubezpieczenia zapewniają kompleksową
+					ochronę Twoich bliskich w razie wypadku. Nie zostaw rodziny bez
+					słoniny - ubezpieczenie na życie zabezpieczy Twoich bliskich.
 				</p>
 			</section>
 			<br />
@@ -64,21 +73,23 @@
 					<div class="card">
 						<div class="card-container">
 							<img src="./img/ppl.jpg" alt="placeholder" />
-							<h4>Grupowe</h4>
+							<h4>Grupowe - Pracodawco, zadbaj o swoich pracowników</h4>
 							<p>Lorem ipsum dolor sit amet consectetur.</p>
 						</div>
 					</div>
 					<div class="card">
 						<div class="card-container">
 							<img src="./img/1_person.jpg" alt="placeholder" />
-							<h4>Indywidualne</h4>
+							<h4>Indywidualne - zabezpiecz swoją rodzinę</h4>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 						</div>
 					</div>
 					<div class="card">
 						<div class="card-container">
 							<img src="./img/young_person.jpg" alt="placeholder" />
-							<h4>Dla dzieci i mlodziezy</h4>
+							<h4>
+								Dla dzieci i mlodziezy - zabezpiecz przyszłość swoim dzieciom
+							</h4>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicingsdf</p>
 						</div>
 					</div>
@@ -97,7 +108,7 @@
 					<div class="blog-card">
 						<img src="./img/pexels-dariaobymaha-1683975.jpg" alt="" />
 						<div class="blog-card-content">
-							<h3>CARD 1</h3>
+							<h3>“Tatra Insurance Life”, twoja ochrona na życie</h3>
 							<p>
 								Przed założeniem firmy, mój dobry przyjaciel Michał, człowiek
 								pełen życia i energii, podjął decyzję o założeniu własnego
@@ -115,7 +126,10 @@
 					<div class="blog-card">
 						<img src="./img/hero-image.jpg" alt="" />
 						<div class="blog-card-content">
-							<h3>CARD 2</h3>
+							<h3>
+								“Tatra Insurance Life” - Dlaczego warto zainwestować w polisę na
+								życie?
+							</h3>
 							<p>
 								Czy zastanawiałeś się kiedyś, co stanie się z Twoimi bliskimi,
 								gdy Ciebie zabraknie? Życie pełne jest nieprzewidywalnych
@@ -133,7 +147,7 @@
 					<div class="blog-card">
 						<img src="./img/pexels-pixabay-39691.jpg" alt="" />
 						<div class="blog-card-content">
-							<h3>CARD 3</h3>
+							<h3>“Tatra insurance life” - Twoja polisa na życie</h3>
 							<p>
 								Oczywistością jest, że życie płata nam figle. Czasami zaskakuje
 								nas nieprzewidywalnymi zdarzeniami, które potrafią wywrócić
@@ -149,17 +163,7 @@
 					</div>
 				</div>
 			</section>
-
-			<section class="contact wrapper" id="contact">
-				<h2 class="section-title">Kontakt</h2>
-				<p><i class="fas fa-phone"></i>+48 000 000 000</p>
-				<p><i class="fas fa-at"></i>mail@mail.pl</p>
-				<h3>Adres</h3>
-				<p>ul. Sezamkowa 1</p>
-				<p>00-000 Kraków</p>
-			</section>
-
-			<!-- <section id="contact" class="wrapper">
+			<section id="contact" class="wrapper">
 				<div class="contact-container">
 					<form action="" class="contact-left">
 						<div class="contact-left-title">
@@ -186,17 +190,93 @@
 							class="contact-inputs"
 							required
 						></textarea>
-						<button type="submit" class="">Wyślij</button>
-
+						<button type="submit" class="contact-btn">Wyślij</button>
 					</form>
 					<div class="contact-right">
 						<h2 class="section-title">Kontakt</h2>
+						<hr />
 						<p><i class="fas fa-phone"></i>+48 000 000 000</p>
 						<p><i class="fas fa-at"></i>mail@mail.pl</p>
+						<br />
 						<h3>Adres</h3>
+						<hr />
 						<p>ul. Sezamkowa 1</p>
 						<p>00-000 Kraków</p>
-					</div> -->
+					</div>
+				</div>
+			</section>
+
+			<section id="faq" class="wrapper">
+				<div class="faq-containter">
+					<div class="faq-container-title">
+						<h2>Często zadawane pytania</h2>
+					</div>
+					<div class="tab">
+						<input type="radio" name="acc" id="acc1" />
+						<label for="acc1">
+							<h3>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+								at!
+							</h3>
+						</label>
+						<div class="faq-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Assumenda itaque expedita tenetur iure mollitia a beatae sunt
+								quidem, illo non!
+							</p>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="radio" name="acc" id="acc2" />
+						<label for="acc2">
+							<h3>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+								at!
+							</h3>
+						</label>
+						<div class="faq-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Assumenda itaque expedita tenetur iure mollitia a beatae sunt
+								quidem, illo non!
+							</p>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="radio" name="acc" id="acc3" />
+						<label for="acc3">
+							<h3>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+								at!
+							</h3>
+						</label>
+						<div class="faq-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Assumenda itaque expedita tenetur iure mollitia a beatae sunt
+								quidem, illo non!
+							</p>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="radio" name="acc" id="acc4" />
+						<label for="acc4">
+							<h3>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+								at!
+							</h3>
+						</label>
+						<div class="faq-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Assumenda itaque expedita tenetur iure mollitia a beatae sunt
+								quidem, illo non!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer-text">

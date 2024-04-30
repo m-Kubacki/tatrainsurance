@@ -5,7 +5,6 @@
 }
 body {
 	font-family: "Montserrat", sans-serif;
-	/* background-color: black; */
 }
 
 html {
@@ -80,13 +79,7 @@ html {
 	background-size: cover;
 	background-position: center;
 }
-/* .header {
-	position: relative;
-	height: 500px;
-	background-image: url("/img/hero-image3\ \(1\).jpg");
-	background-size: cover;
-	background-position: center;
-} */
+
 .hero-bg {
 	position: absolute;
 	width: 100%;
@@ -107,6 +100,12 @@ html {
 	font-size: 90px;
 	color: #ddd;
 }
+.newsletter-container {
+	position: relative;
+	height: 8vh;
+	width: auto;
+}
+
 .get-started-btn {
 	background: antiquewhite;
 	padding: 20px;
@@ -117,6 +116,15 @@ html {
 	border-radius: 6px;
 	transition: background-color 0.3s ease;
 }
+
+.newsletter-input {
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: none;
+	font-size: 30px;
+}
+
 .get-started-btn:hover {
 	background: burlywood;
 }
@@ -136,9 +144,6 @@ html {
 }
 
 .cards-group {
-	/* display: flex;
-	text-align: center;
-	flex-wrap: wrap; */
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -154,14 +159,6 @@ html {
 	box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
 }
-/* .card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	transition: 0.3s;
-	width: 325px;
-	border-radius: 20px;
-	padding-top: 10px;
-	margin: 10px;
-} */
 
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -182,9 +179,8 @@ html {
 /* sekcja o nas */
 
 .why-us {
-	padding: 30px;
 	width: 100%;
-	/* background-color: antiquewhite; */
+	padding: 30px;
 	border-radius: 50px;
 }
 
@@ -290,7 +286,21 @@ html {
 }
 
 .contact-inputs:focus {
-	border: 2px solid red;
+	border: 2px solid black;
+}
+
+.contact-btn {
+	background: white;
+	padding: 20px 60px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+	background: burlywood;
 }
 
 .contact {
@@ -302,9 +312,85 @@ html {
 	margin: 20px 0 5px;
 	text-transform: uppercase;
 }
+.contact-right {
+	text-align: center;
+}
+
+.contact-right hr {
+	border: none;
+	width: 60px;
+	height: 2px;
+	background-color: black;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+/* FAQ */
+.faq-containter {
+	display: flex;
+	margin: 20px 0 20px 0;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+}
+.faq-container-title {
+	font-size: 25px;
+	margin: 20px;
+}
+
+.tab {
+	position: relative;
+	background-color: antiquewhite;
+	padding: 0 20px 20px;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	overflow: hidden;
+	border-radius: 40px;
+}
+
+.tab input {
+	appearance: none;
+}
+
+.tab label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.tab label::after {
+	content: "+";
+	position: absolute;
+	right: 20px;
+	font-size: 2em;
+	color: rgba(0, 0, 0.1);
+	transition: transform 0.3s;
+}
+
+.tab:hover label::after {
+	color: black;
+}
+.tab input:checked ~ label::after {
+	transform: rotate(135deg);
+}
+
+.faq-content {
+	max-height: 0;
+	transition: 1s;
+	overflow: hidden;
+}
+
+.tab input:checked ~ .faq-content {
+	max-height: 100vh;
+}
+
+.faq-content p {
+	position: relative;
+	padding: 10px 0;
+	color: black;
+	z-index: 10;
+}
 
 /* footer */
-
 .footer {
 	width: auto;
 	padding: 3vh;
