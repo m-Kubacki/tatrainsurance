@@ -20,11 +20,12 @@ html {
 
 /* navbar */
 .navbar {
+	display: flex;
+	width: 100%;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	height: 80px;
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	z-index: 10;
@@ -35,17 +36,18 @@ html {
 	color: black;
 	font-size: 30px;
 }
-
 .navbar a {
 	text-decoration: none;
 }
 
-.navbar ul {
+/* .navbar ul {
 	display: flex;
-}
+} */
+
 .navbar ul li {
 	list-style: none;
 }
+
 .navbar ul li a {
 	text-decoration: none;
 	color: black;
@@ -57,6 +59,12 @@ html {
 	color: burlywood;
 }
 
+.navbar-btns {
+	display: flex;
+	gap: 10px;
+	margin-left: 10px;
+}
+
 .register-btn,
 .login-btn {
 	background: antiquewhite;
@@ -64,7 +72,7 @@ html {
 	border: none;
 	font-size: 16px;
 	cursor: pointer;
-	border-radius: 10px;
+	border-radius: 20px;
 	transition: background-color 0.3s ease;
 }
 .register-btn:hover,
@@ -72,6 +80,83 @@ html {
 	background: burlywood;
 }
 
+.hamburger {
+	display: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	background: black;
+}
+.nav-menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+}
+
+.nav-ul {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 1290px) {
+	.hamburger {
+		display: block;
+	}
+	.nav-menu.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.nav-menu.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.nav-menu.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.navbar h2 {
+		font-size: 20px;
+	}
+	.navbar {
+		position: fixed;
+	}
+	.nav-menu {
+		background-color: white;
+		top: 80px;
+		/* height: 100vh; */
+		width: 100%;
+		position: fixed;
+		right: -100%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		transition: 0.3s ease;
+	}
+	.nav-ul {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.navbar-btns {
+		display: flex;
+		flex-direction: column;
+		margin: 20px;
+		gap: 10px;
+	}
+
+	.nav-menu.active {
+		right: 0;
+	}
+}
 /* hero image header */
 .header {
 	position: relative;
@@ -204,6 +289,7 @@ html {
 
 .about-author img {
 	height: 100%;
+	margin: 10px;
 }
 
 .about-author h4 {
